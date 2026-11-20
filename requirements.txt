@@ -1,0 +1,3 @@
+# SentinelKV Core is pure Python standard library.
+# Optional development dependencies:
+pytest>=8.0.0

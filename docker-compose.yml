@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  sentinel-kv:
+    build: .
+    container_name: sentinelkv-node
+    ports:
+      - "6379:6379"
+    volumes:
+      - kv-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  kv-data:
